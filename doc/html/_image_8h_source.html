@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Street Fighter:  Fichier source de src/sdl/Image.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Street Fighter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_40988668acd171a89cddbb9743a487a4.html">sdl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Image.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_image_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef IMAGE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define IMAGE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;SDL2/SDL_image.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_image.html">    7</a></span><span class="keyword">class </span><a class="code hl_class" href="class_image.html">Image</a> {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="keyword">private</span>: </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  SDL_Rect src_rect;      <span class="comment">// le rectangle de la sous-image </span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  SDL_Rect dst_rect;      <span class="comment">// le rectangle de l&#39;image dans la fenetre</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  SDL_Surface * surface;  <span class="comment">// surface de l&#39;image</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  SDL_Texture * texture;  <span class="comment">// texture de l&#39;image</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keywordtype">bool</span> animated;          <span class="comment">// image animé ou non</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">int</span> h_anim;             <span class="comment">// hauteur d&#39;une animation</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordtype">int</span> w_anim;             <span class="comment">// largeur d&#39;une animation</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> nb_anim;   <span class="comment">// nombre d&#39;animation dans l&#39;image</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  <span class="keywordtype">int</span> num_anim;           <span class="comment">// numero de l&#39;animation jouée</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>  <span class="keywordtype">int</span>* tab_anim;          <span class="comment">// nombre d&#39;image par animation</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> </div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>public :</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <a class="code hl_function" href="class_image.html#a58edd1c45b4faeb5f789b0d036d02313">Image</a>();</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <a class="code hl_function" href="class_image.html#a58edd1c45b4faeb5f789b0d036d02313">Image</a>(<span class="keyword">const</span> std::string filename,SDL_Rect src_r,SDL_Rect dst_r,<span class="keywordtype">bool</span> animation = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>  <a class="code hl_function" href="class_image.html#a0294f63700543e11c0f0da85601c7ae5">~Image</a>();</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_image.html#af30d64aff8f158236b4c97963bf4a7d1">chargerImage</a>(<span class="keyword">const</span> std::string filename,SDL_Rect src_r,SDL_Rect dst_r,<span class="keywordtype">bool</span> animation = <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  SDL_Surface* <a class="code hl_function" href="class_image.html#a4b3231683d2f127120a987c60319d63c">get_surface</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  SDL_Texture* <a class="code hl_function" href="class_image.html#afacef9ab99d7f659a360b005621d9489">get_texture</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  SDL_Rect <a class="code hl_function" href="class_image.html#a74541db2e5fe831e82babd0e9b7ce640">get_src_rect</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  SDL_Rect <a class="code hl_function" href="class_image.html#a31d64804f219e3255f0de32e629895c8">get_dst_rect</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_image.html#ac145641890ed4879c3c6934dcc42c5e6">get_num_anim</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_image.html#a0f92ce765150ab1af7d8052645bf604c">get_h_anim</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_image.html#adef3ce7352942ef58153abc7233953a9">get_w_anim</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">int</span> <a class="code hl_function" href="class_image.html#affb117b87c3b6790114ed41868429014">get_tab_anim</a>(<span class="keywordtype">int</span> indice) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span> </div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_image.html#adb64b7cbafd8ff2d8d1eb798a7b6c0ed">set_texture</a>(SDL_Texture* t);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_image.html#a30aca980c64ac01c6cf2903e32d9f086">set_rect_src</a> (SDL_Rect rs);</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_image.html#a7188264e431dbbe160be587f80fb4577">set_rect_dst</a> (SDL_Rect rd);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_image.html#a952129d4b01b27099ecf8ba34a427a63">set_num_anim</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> n);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_image.html#a3764b100939ffa98fbb7e826e418c865">initAnim</a>(<span class="keywordtype">int</span> h1,<span class="keywordtype">int</span> w1,<span class="keywordtype">int</span> nb_anim1,<span class="keywordtype">int</span> num_anim1,<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span>* tab1);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_image.html#a4f7d3aa0ed5026cf2c2436e00783dad4">resetAnim</a>();</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span> </div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_image.html#adaca3d43e67777b5e76462d1b4d2bacc">switchAnim</a>(<span class="keywordtype">int</span> number);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>  <span class="keywordtype">void</span> <a class="code hl_function" href="class_image.html#aa4f881e18d7b454ca185c05ec8e70b6d">update</a>();</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>};</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclass_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdef"><b>Definition:</b> Image.h:7</div></div>
+<div class="ttc" id="aclass_image_html_a0294f63700543e11c0f0da85601c7ae5"><div class="ttname"><a href="class_image.html#a0294f63700543e11c0f0da85601c7ae5">Image::~Image</a></div><div class="ttdeci">~Image()</div><div class="ttdoc">Destructeur : détruit la surface, la texture,.</div><div class="ttdef"><b>Definition:</b> Image.cpp:95</div></div>
+<div class="ttc" id="aclass_image_html_a0f92ce765150ab1af7d8052645bf604c"><div class="ttname"><a href="class_image.html#a0f92ce765150ab1af7d8052645bf604c">Image::get_h_anim</a></div><div class="ttdeci">int get_h_anim() const</div><div class="ttdoc">Accesseur :</div><div class="ttdef"><b>Definition:</b> Image.cpp:52</div></div>
+<div class="ttc" id="aclass_image_html_a30aca980c64ac01c6cf2903e32d9f086"><div class="ttname"><a href="class_image.html#a30aca980c64ac01c6cf2903e32d9f086">Image::set_rect_src</a></div><div class="ttdeci">void set_rect_src(SDL_Rect rs)</div><div class="ttdoc">Mutateur : modifie le rectangle source.</div><div class="ttdef"><b>Definition:</b> Image.cpp:61</div></div>
+<div class="ttc" id="aclass_image_html_a31d64804f219e3255f0de32e629895c8"><div class="ttname"><a href="class_image.html#a31d64804f219e3255f0de32e629895c8">Image::get_dst_rect</a></div><div class="ttdeci">SDL_Rect get_dst_rect() const</div><div class="ttdoc">Accesseur : récupère le rectangle destination de l'image.</div><div class="ttdef"><b>Definition:</b> Image.cpp:48</div></div>
+<div class="ttc" id="aclass_image_html_a3764b100939ffa98fbb7e826e418c865"><div class="ttname"><a href="class_image.html#a3764b100939ffa98fbb7e826e418c865">Image::initAnim</a></div><div class="ttdeci">void initAnim(int h1, int w1, int nb_anim1, int num_anim1, unsigned int *tab1)</div><div class="ttdoc">Si l'image est animée, initialise les données requises.</div><div class="ttdef"><b>Definition:</b> Image.cpp:68</div></div>
+<div class="ttc" id="aclass_image_html_a4b3231683d2f127120a987c60319d63c"><div class="ttname"><a href="class_image.html#a4b3231683d2f127120a987c60319d63c">Image::get_surface</a></div><div class="ttdeci">SDL_Surface * get_surface() const</div><div class="ttdoc">Accesseur : récupère la surface SDL.</div><div class="ttdef"><b>Definition:</b> Image.cpp:42</div></div>
+<div class="ttc" id="aclass_image_html_a4f7d3aa0ed5026cf2c2436e00783dad4"><div class="ttname"><a href="class_image.html#a4f7d3aa0ed5026cf2c2436e00783dad4">Image::resetAnim</a></div><div class="ttdeci">void resetAnim()</div><div class="ttdoc">Remet l'animation à la premiere image.</div><div class="ttdef"><b>Definition:</b> Image.cpp:80</div></div>
+<div class="ttc" id="aclass_image_html_a58edd1c45b4faeb5f789b0d036d02313"><div class="ttname"><a href="class_image.html#a58edd1c45b4faeb5f789b0d036d02313">Image::Image</a></div><div class="ttdeci">Image()</div><div class="ttdoc">Constructeur par défaut : initialise les données à nullptr et à 0.</div><div class="ttdef"><b>Definition:</b> Image.cpp:6</div></div>
+<div class="ttc" id="aclass_image_html_a7188264e431dbbe160be587f80fb4577"><div class="ttname"><a href="class_image.html#a7188264e431dbbe160be587f80fb4577">Image::set_rect_dst</a></div><div class="ttdeci">void set_rect_dst(SDL_Rect rd)</div><div class="ttdoc">Mutateur : modifie le rectangle destination.</div><div class="ttdef"><b>Definition:</b> Image.cpp:63</div></div>
+<div class="ttc" id="aclass_image_html_a74541db2e5fe831e82babd0e9b7ce640"><div class="ttname"><a href="class_image.html#a74541db2e5fe831e82babd0e9b7ce640">Image::get_src_rect</a></div><div class="ttdeci">SDL_Rect get_src_rect() const</div><div class="ttdoc">Accesseur : récupère le rectangle source de l'image.</div><div class="ttdef"><b>Definition:</b> Image.cpp:46</div></div>
+<div class="ttc" id="aclass_image_html_a952129d4b01b27099ecf8ba34a427a63"><div class="ttname"><a href="class_image.html#a952129d4b01b27099ecf8ba34a427a63">Image::set_num_anim</a></div><div class="ttdeci">void set_num_anim(unsigned int n)</div><div class="ttdoc">Mutateur : modifie le numéro de l'animatio,.</div><div class="ttdef"><b>Definition:</b> Image.cpp:65</div></div>
+<div class="ttc" id="aclass_image_html_aa4f881e18d7b454ca185c05ec8e70b6d"><div class="ttname"><a href="class_image.html#aa4f881e18d7b454ca185c05ec8e70b6d">Image::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Si l'image est animée, modifie le rectangle source.</div><div class="ttdef"><b>Definition:</b> Image.cpp:89</div></div>
+<div class="ttc" id="aclass_image_html_ac145641890ed4879c3c6934dcc42c5e6"><div class="ttname"><a href="class_image.html#ac145641890ed4879c3c6934dcc42c5e6">Image::get_num_anim</a></div><div class="ttdeci">int get_num_anim() const</div><div class="ttdoc">Accesseur : récupère le numéro de l'animation.</div><div class="ttdef"><b>Definition:</b> Image.cpp:50</div></div>
+<div class="ttc" id="aclass_image_html_adaca3d43e67777b5e76462d1b4d2bacc"><div class="ttname"><a href="class_image.html#adaca3d43e67777b5e76462d1b4d2bacc">Image::switchAnim</a></div><div class="ttdeci">void switchAnim(int number)</div><div class="ttdoc">Si l'image est animée, change l'animation jouée.</div><div class="ttdef"><b>Definition:</b> Image.cpp:84</div></div>
+<div class="ttc" id="aclass_image_html_adb64b7cbafd8ff2d8d1eb798a7b6c0ed"><div class="ttname"><a href="class_image.html#adb64b7cbafd8ff2d8d1eb798a7b6c0ed">Image::set_texture</a></div><div class="ttdeci">void set_texture(SDL_Texture *t)</div><div class="ttdoc">Mutateur : modifie la texture.</div><div class="ttdef"><b>Definition:</b> Image.cpp:59</div></div>
+<div class="ttc" id="aclass_image_html_adef3ce7352942ef58153abc7233953a9"><div class="ttname"><a href="class_image.html#adef3ce7352942ef58153abc7233953a9">Image::get_w_anim</a></div><div class="ttdeci">int get_w_anim() const</div><div class="ttdoc">Accesseur :</div><div class="ttdef"><b>Definition:</b> Image.cpp:54</div></div>
+<div class="ttc" id="aclass_image_html_af30d64aff8f158236b4c97963bf4a7d1"><div class="ttname"><a href="class_image.html#af30d64aff8f158236b4c97963bf4a7d1">Image::chargerImage</a></div><div class="ttdeci">void chargerImage(const std::string filename, SDL_Rect src_r, SDL_Rect dst_r, bool animation=false)</div><div class="ttdoc">Supprime l'ancienne image dans l'instance, et initialise la surface, les rectanlges et determine si l...</div><div class="ttdef"><b>Definition:</b> Image.cpp:23</div></div>
+<div class="ttc" id="aclass_image_html_afacef9ab99d7f659a360b005621d9489"><div class="ttname"><a href="class_image.html#afacef9ab99d7f659a360b005621d9489">Image::get_texture</a></div><div class="ttdeci">SDL_Texture * get_texture() const</div><div class="ttdoc">Accesseur : récupère la texture SDL.</div><div class="ttdef"><b>Definition:</b> Image.cpp:44</div></div>
+<div class="ttc" id="aclass_image_html_affb117b87c3b6790114ed41868429014"><div class="ttname"><a href="class_image.html#affb117b87c3b6790114ed41868429014">Image::get_tab_anim</a></div><div class="ttdeci">int get_tab_anim(int indice) const</div><div class="ttdoc">Accesseur :</div><div class="ttdef"><b>Definition:</b> Image.cpp:56</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

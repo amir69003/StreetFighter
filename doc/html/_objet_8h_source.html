@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Street Fighter:  Fichier source de src/core/Objet.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Street Fighter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Objet.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_objet_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef OBJET2D_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define OBJET2D_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="_rectangle_8h.html">Rectangle.h</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &quot;<a class="code" href="_vect2_8h.html">Vect2.h</a>&quot;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno"><a class="line" href="class_objet.html">    6</a></span><span class="keyword">class </span><a class="code hl_class" href="class_objet.html">Objet</a> {</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="class_objet.html#a86769f23341a9933f98953081fcdacb3">    9</a></span>    <a class="code hl_class" href="class_rectangle.html">Rectangle</a> <a class="code hl_variable" href="class_objet.html#a86769f23341a9933f98953081fcdacb3">rect</a>; <span class="comment">// le rectangle de l&#39;objet</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_objet.html#a6ed88ef32dfde6d58c437da9406eed6c">   10</a></span>    <a class="code hl_class" href="class_vect2.html">Vect2</a> <a class="code hl_variable" href="class_objet.html#a6ed88ef32dfde6d58c437da9406eed6c">vitesse</a>;  <span class="comment">// la vitesse de l&#39;objet</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="class_objet.html#a0d9b3b5bcfd44beb27e353a1a0c73476">   11</a></span>    <a class="code hl_class" href="class_vect2.html">Vect2</a> <a class="code hl_variable" href="class_objet.html#a0d9b3b5bcfd44beb27e353a1a0c73476">force</a>;    <span class="comment">// la force appliquée à l&#39;objet</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="class_objet.html#afff06c0a5a6cffdf0f8884e0b7ab9cd7">   12</a></span>    <span class="keywordtype">float</span> <a class="code hl_variable" href="class_objet.html#afff06c0a5a6cffdf0f8884e0b7ab9cd7">masse</a>;    <span class="comment">// la masse de l&#39;objet</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    <a class="code hl_function" href="class_objet.html#aefdd826d50085897e4894ffef4597d04">Objet</a>();</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>    <a class="code hl_function" href="class_objet.html#aefdd826d50085897e4894ffef4597d04">Objet</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_rectangle.html">Rectangle</a>&amp; r,<span class="keyword">const</span> <a class="code hl_class" href="class_vect2.html">Vect2</a>&amp; v,<span class="keyword">const</span> <a class="code hl_class" href="class_vect2.html">Vect2</a>&amp; f,<span class="keywordtype">float</span> m);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <a class="code hl_function" href="class_objet.html#aefdd826d50085897e4894ffef4597d04">Objet</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_objet.html">Objet</a>&amp; o);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_objet.html#af83b97659ffd084068dd64bec43a8396">set_rect</a>(<span class="keywordtype">float</span> _x,<span class="keywordtype">float</span> _y,<span class="keywordtype">float</span> _w,<span class="keywordtype">float</span> _h);</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_objet.html#aa1e7972b3e9cb5479e1840205a39b102">set_vitesse</a>(<span class="keywordtype">float</span> _x,<span class="keywordtype">float</span> _y);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_objet.html#a73185139fe3b958733ad4663ab61b6f6">set_force</a>(<span class="keywordtype">float</span> _x,<span class="keywordtype">float</span> _y);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_objet.html#a15da226ae7ffbe9de130adcea5a5be03">update</a>();</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_objet.html#a15da226ae7ffbe9de130adcea5a5be03">update</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_rectangle.html">Rectangle</a>&amp; monde);</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_objet.html#aed0eb738281dc5925c0a21e8fd895684">testRegression</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>};</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span> </div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_rectangle_8h_html"><div class="ttname"><a href="_rectangle_8h.html">Rectangle.h</a></div></div>
+<div class="ttc" id="a_vect2_8h_html"><div class="ttname"><a href="_vect2_8h.html">Vect2.h</a></div></div>
+<div class="ttc" id="aclass_objet_html"><div class="ttname"><a href="class_objet.html">Objet</a></div><div class="ttdef"><b>Definition:</b> Objet.h:6</div></div>
+<div class="ttc" id="aclass_objet_html_a0d9b3b5bcfd44beb27e353a1a0c73476"><div class="ttname"><a href="class_objet.html#a0d9b3b5bcfd44beb27e353a1a0c73476">Objet::force</a></div><div class="ttdeci">Vect2 force</div><div class="ttdef"><b>Definition:</b> Objet.h:11</div></div>
+<div class="ttc" id="aclass_objet_html_a15da226ae7ffbe9de130adcea5a5be03"><div class="ttname"><a href="class_objet.html#a15da226ae7ffbe9de130adcea5a5be03">Objet::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Met à jour la position du rectangle de l'objet en fonction de la vitesse,la force et du temps.</div><div class="ttdef"><b>Definition:</b> Objet.cpp:25</div></div>
+<div class="ttc" id="aclass_objet_html_a6ed88ef32dfde6d58c437da9406eed6c"><div class="ttname"><a href="class_objet.html#a6ed88ef32dfde6d58c437da9406eed6c">Objet::vitesse</a></div><div class="ttdeci">Vect2 vitesse</div><div class="ttdef"><b>Definition:</b> Objet.h:10</div></div>
+<div class="ttc" id="aclass_objet_html_a73185139fe3b958733ad4663ab61b6f6"><div class="ttname"><a href="class_objet.html#a73185139fe3b958733ad4663ab61b6f6">Objet::set_force</a></div><div class="ttdeci">void set_force(float _x, float _y)</div><div class="ttdoc">Mutateur : modifie la force de l'objet.</div><div class="ttdef"><b>Definition:</b> Objet.cpp:21</div></div>
+<div class="ttc" id="aclass_objet_html_a86769f23341a9933f98953081fcdacb3"><div class="ttname"><a href="class_objet.html#a86769f23341a9933f98953081fcdacb3">Objet::rect</a></div><div class="ttdeci">Rectangle rect</div><div class="ttdef"><b>Definition:</b> Objet.h:9</div></div>
+<div class="ttc" id="aclass_objet_html_aa1e7972b3e9cb5479e1840205a39b102"><div class="ttname"><a href="class_objet.html#aa1e7972b3e9cb5479e1840205a39b102">Objet::set_vitesse</a></div><div class="ttdeci">void set_vitesse(float _x, float _y)</div><div class="ttdoc">Mutateur : modifie la vitesse de l'objet.</div><div class="ttdef"><b>Definition:</b> Objet.cpp:17</div></div>
+<div class="ttc" id="aclass_objet_html_aed0eb738281dc5925c0a21e8fd895684"><div class="ttname"><a href="class_objet.html#aed0eb738281dc5925c0a21e8fd895684">Objet::testRegression</a></div><div class="ttdeci">void testRegression() const</div><div class="ttdoc">Test de regression qui teste toutes les autres fonctions.</div><div class="ttdef"><b>Definition:</b> Objet.cpp:57</div></div>
+<div class="ttc" id="aclass_objet_html_aefdd826d50085897e4894ffef4597d04"><div class="ttname"><a href="class_objet.html#aefdd826d50085897e4894ffef4597d04">Objet::Objet</a></div><div class="ttdeci">Objet()</div><div class="ttdoc">Constructeur par défault : initialise les données à 0.</div><div class="ttdef"><b>Definition:</b> Objet.cpp:6</div></div>
+<div class="ttc" id="aclass_objet_html_af83b97659ffd084068dd64bec43a8396"><div class="ttname"><a href="class_objet.html#af83b97659ffd084068dd64bec43a8396">Objet::set_rect</a></div><div class="ttdeci">void set_rect(float _x, float _y, float _w, float _h)</div><div class="ttdoc">Mutateur : modifie le rectangle de l'objet.</div><div class="ttdef"><b>Definition:</b> Objet.cpp:13</div></div>
+<div class="ttc" id="aclass_objet_html_afff06c0a5a6cffdf0f8884e0b7ab9cd7"><div class="ttname"><a href="class_objet.html#afff06c0a5a6cffdf0f8884e0b7ab9cd7">Objet::masse</a></div><div class="ttdeci">float masse</div><div class="ttdef"><b>Definition:</b> Objet.h:12</div></div>
+<div class="ttc" id="aclass_rectangle_html"><div class="ttname"><a href="class_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> Rectangle.h:5</div></div>
+<div class="ttc" id="aclass_vect2_html"><div class="ttname"><a href="class_vect2.html">Vect2</a></div><div class="ttdef"><b>Definition:</b> Vect2.h:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

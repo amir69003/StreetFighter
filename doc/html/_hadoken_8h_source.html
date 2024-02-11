@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Street Fighter:  Fichier source de src/sdl/Hadoken.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Street Fighter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_40988668acd171a89cddbb9743a487a4.html">sdl</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Hadoken.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_hadoken_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef HADOKEN_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define HADOKEN_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;SDL2/SDL.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;SDL2/SDL_image.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;cassert&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include&quot;<a class="code" href="_image_8h.html">Image.h</a>&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include&quot;../core/Personnage.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno"><a class="line" href="class_hadoken.html">   10</a></span><span class="keyword">class </span><a class="code hl_class" href="class_hadoken.html">Hadoken</a></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>{</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_hadoken.html#a76382a783bd60caf7441d55b3b217ce8">   13</a></span>        <a class="code hl_class" href="class_image.html">Image</a> <a class="code hl_variable" href="class_hadoken.html#a76382a783bd60caf7441d55b3b217ce8">im</a>;           <span class="comment">// l&#39;image du Hadoken</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_hadoken.html#aadb1c73cf70762895f8cc4f8a74500a4">   14</a></span>        <a class="code hl_class" href="class_objet.html">Objet</a> <a class="code hl_variable" href="class_hadoken.html#aadb1c73cf70762895f8cc4f8a74500a4">obj</a>;          <span class="comment">// l&#39;objet du Hadoken</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_hadoken.html#a99139aff056f943665bc1f2d7b304da8">   15</a></span>        <span class="keywordtype">bool</span> <a class="code hl_variable" href="class_hadoken.html#a99139aff056f943665bc1f2d7b304da8">lanceinverse</a>;  <span class="comment">// le sens du lancé du Hadoken</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>        <span class="keywordtype">void</span> <a class="code hl_function" href="class_hadoken.html#af3946547c269ebb8ea1443f957de5bcc">updatehad</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_rectangle.html">Rectangle</a>&amp; monde);</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>};</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_image_8h_html"><div class="ttname"><a href="_image_8h.html">Image.h</a></div></div>
+<div class="ttc" id="aclass_hadoken_html"><div class="ttname"><a href="class_hadoken.html">Hadoken</a></div><div class="ttdef"><b>Definition:</b> Hadoken.h:11</div></div>
+<div class="ttc" id="aclass_hadoken_html_a76382a783bd60caf7441d55b3b217ce8"><div class="ttname"><a href="class_hadoken.html#a76382a783bd60caf7441d55b3b217ce8">Hadoken::im</a></div><div class="ttdeci">Image im</div><div class="ttdef"><b>Definition:</b> Hadoken.h:13</div></div>
+<div class="ttc" id="aclass_hadoken_html_a99139aff056f943665bc1f2d7b304da8"><div class="ttname"><a href="class_hadoken.html#a99139aff056f943665bc1f2d7b304da8">Hadoken::lanceinverse</a></div><div class="ttdeci">bool lanceinverse</div><div class="ttdef"><b>Definition:</b> Hadoken.h:15</div></div>
+<div class="ttc" id="aclass_hadoken_html_aadb1c73cf70762895f8cc4f8a74500a4"><div class="ttname"><a href="class_hadoken.html#aadb1c73cf70762895f8cc4f8a74500a4">Hadoken::obj</a></div><div class="ttdeci">Objet obj</div><div class="ttdef"><b>Definition:</b> Hadoken.h:14</div></div>
+<div class="ttc" id="aclass_hadoken_html_af3946547c269ebb8ea1443f957de5bcc"><div class="ttname"><a href="class_hadoken.html#af3946547c269ebb8ea1443f957de5bcc">Hadoken::updatehad</a></div><div class="ttdeci">void updatehad(const Rectangle &amp;monde)</div><div class="ttdoc">Mise à jour du Hadoken.</div><div class="ttdef"><b>Definition:</b> Hadoken.cpp:4</div></div>
+<div class="ttc" id="aclass_image_html"><div class="ttname"><a href="class_image.html">Image</a></div><div class="ttdef"><b>Definition:</b> Image.h:7</div></div>
+<div class="ttc" id="aclass_objet_html"><div class="ttname"><a href="class_objet.html">Objet</a></div><div class="ttdef"><b>Definition:</b> Objet.h:6</div></div>
+<div class="ttc" id="aclass_rectangle_html"><div class="ttname"><a href="class_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> Rectangle.h:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

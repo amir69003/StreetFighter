@@ -1,0 +1,151 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Street Fighter:  Fichier source de src/core/Personnage.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Street Fighter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_aebb8dcc11953d78e620bbef0b9e2183.html">core</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Personnage.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_personnage_8h.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef PERSONNAGE_H</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define PERSONNAGE_H</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &quot;<a class="code" href="_objet_8h.html">Objet.h</a>&quot;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="_personnage_8h.html#a9c64074e7f07a64c13facf85feaaaf66">    7</a></span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="_personnage_8h.html#a9c64074e7f07a64c13facf85feaaaf66">DEGAT_POING</a> = 10;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="_personnage_8h.html#abb195fcac1e553c733d7cae11dbfc597">    8</a></span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="_personnage_8h.html#abb195fcac1e553c733d7cae11dbfc597">DEGAT_PIED</a> = 20;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno"><a class="line" href="_personnage_8h.html#a67f655b40c8be4899be8b03debb261da">    9</a></span> <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="_personnage_8h.html#a67f655b40c8be4899be8b03debb261da">DEGUAT_SPE</a> = 30;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno"><a class="line" href="_personnage_8h.html#ac8e8711577536438c3a9f439a763ee1da14b8253ecfbe8ccaafa28fb3f7acaacb">   11</a></span><span class="keyword">enum</span> <a class="code hl_enumeration" href="_personnage_8h.html#ac8e8711577536438c3a9f439a763ee1d">type_attaque</a> {<a class="code hl_enumvalue" href="_personnage_8h.html#ac8e8711577536438c3a9f439a763ee1daa57cb506f3333d093532262751906dab">poing</a>, <a class="code hl_enumvalue" href="_personnage_8h.html#ac8e8711577536438c3a9f439a763ee1da14b8253ecfbe8ccaafa28fb3f7acaacb">pied</a>, <a class="code hl_enumvalue" href="_personnage_8h.html#ac8e8711577536438c3a9f439a763ee1da7e976b3154271ae873a8a988c975b6d1">speciale</a>};</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="class_personnage.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="class_personnage.html">Personnage</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="keyword">public</span>:</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="class_personnage.html#aa90afcce53474eb8ae8e04ee923da9f1">   15</a></span>    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <a class="code hl_variable" href="class_personnage.html#aa90afcce53474eb8ae8e04ee923da9f1">identifiant</a>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="class_personnage.html#ab30f273d1d878af3b189131b4e7638dd">   16</a></span>    std::string <a class="code hl_variable" href="class_personnage.html#ab30f273d1d878af3b189131b4e7638dd">nom</a>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno"><a class="line" href="class_personnage.html#a1f21daadf6f152072c97b5700849a6bc">   17</a></span>    <span class="keywordtype">int</span> <a class="code hl_variable" href="class_personnage.html#a1f21daadf6f152072c97b5700849a6bc">vie</a>;</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="class_personnage.html#a62332318c980f41e38f2784ba62cf303">   18</a></span>    <a class="code hl_class" href="class_objet.html">Objet</a> <a class="code hl_variable" href="class_personnage.html#a62332318c980f41e38f2784ba62cf303">objet</a>;</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    </div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>    <a class="code hl_function" href="class_personnage.html#abec36eb0310adc71f3375297fc590c65">Personnage</a> ();</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personnage.html#ab7c8dfb88afc5faa7a77d43e9ede09be">setPerso</a>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> <span class="keywordtype">id</span>,std::string n,<span class="keywordtype">int</span> v = 100);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personnage.html#a8c30ec79f1a3086f952d6458b531cb4d">attaquer</a>(<a class="code hl_enumeration" href="_personnage_8h.html#ac8e8711577536438c3a9f439a763ee1d">type_attaque</a> t,<a class="code hl_class" href="class_personnage.html">Personnage</a>&amp; p);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">bool</span> <a class="code hl_function" href="class_personnage.html#a152c87fe36d45f61ecfa2c58374b524e">estMort</a> () <span class="keyword">const</span> ;</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personnage.html#a045e4abd7b6099d9468b357078f98688">retirerVie</a> (<span class="keywordtype">int</span> nbDegat);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personnage.html#aa4a3e22b457d5374efd4bc42ad05696e">teleporter</a>(<span class="keywordtype">float</span> _x,<span class="keywordtype">float</span> _y);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personnage.html#abfec5e39e68aaec8527913bcef97a236">deplacer</a>(<span class="keywordtype">float</span> _x,<span class="keywordtype">float</span> _y);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personnage.html#a4885a6cd17d50bf750232f7a4c94f64b">update</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personnage.html#a4885a6cd17d50bf750232f7a4c94f64b">update</a>(<span class="keyword">const</span> <a class="code hl_class" href="class_rectangle.html">Rectangle</a>&amp; monde);</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="class_personnage.html#a1996b0944e92c2c52e39734fbe4d7371">testRegression</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>};</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_objet_8h_html"><div class="ttname"><a href="_objet_8h.html">Objet.h</a></div></div>
+<div class="ttc" id="a_personnage_8h_html_a67f655b40c8be4899be8b03debb261da"><div class="ttname"><a href="_personnage_8h.html#a67f655b40c8be4899be8b03debb261da">DEGUAT_SPE</a></div><div class="ttdeci">const int DEGUAT_SPE</div><div class="ttdef"><b>Definition:</b> Personnage.h:9</div></div>
+<div class="ttc" id="a_personnage_8h_html_a9c64074e7f07a64c13facf85feaaaf66"><div class="ttname"><a href="_personnage_8h.html#a9c64074e7f07a64c13facf85feaaaf66">DEGAT_POING</a></div><div class="ttdeci">const int DEGAT_POING</div><div class="ttdef"><b>Definition:</b> Personnage.h:7</div></div>
+<div class="ttc" id="a_personnage_8h_html_abb195fcac1e553c733d7cae11dbfc597"><div class="ttname"><a href="_personnage_8h.html#abb195fcac1e553c733d7cae11dbfc597">DEGAT_PIED</a></div><div class="ttdeci">const int DEGAT_PIED</div><div class="ttdef"><b>Definition:</b> Personnage.h:8</div></div>
+<div class="ttc" id="a_personnage_8h_html_ac8e8711577536438c3a9f439a763ee1d"><div class="ttname"><a href="_personnage_8h.html#ac8e8711577536438c3a9f439a763ee1d">type_attaque</a></div><div class="ttdeci">type_attaque</div><div class="ttdef"><b>Definition:</b> Personnage.h:11</div></div>
+<div class="ttc" id="a_personnage_8h_html_ac8e8711577536438c3a9f439a763ee1da14b8253ecfbe8ccaafa28fb3f7acaacb"><div class="ttname"><a href="_personnage_8h.html#ac8e8711577536438c3a9f439a763ee1da14b8253ecfbe8ccaafa28fb3f7acaacb">pied</a></div><div class="ttdeci">@ pied</div><div class="ttdef"><b>Definition:</b> Personnage.h:11</div></div>
+<div class="ttc" id="a_personnage_8h_html_ac8e8711577536438c3a9f439a763ee1da7e976b3154271ae873a8a988c975b6d1"><div class="ttname"><a href="_personnage_8h.html#ac8e8711577536438c3a9f439a763ee1da7e976b3154271ae873a8a988c975b6d1">speciale</a></div><div class="ttdeci">@ speciale</div><div class="ttdef"><b>Definition:</b> Personnage.h:11</div></div>
+<div class="ttc" id="a_personnage_8h_html_ac8e8711577536438c3a9f439a763ee1daa57cb506f3333d093532262751906dab"><div class="ttname"><a href="_personnage_8h.html#ac8e8711577536438c3a9f439a763ee1daa57cb506f3333d093532262751906dab">poing</a></div><div class="ttdeci">@ poing</div><div class="ttdef"><b>Definition:</b> Personnage.h:11</div></div>
+<div class="ttc" id="aclass_objet_html"><div class="ttname"><a href="class_objet.html">Objet</a></div><div class="ttdef"><b>Definition:</b> Objet.h:6</div></div>
+<div class="ttc" id="aclass_personnage_html"><div class="ttname"><a href="class_personnage.html">Personnage</a></div><div class="ttdef"><b>Definition:</b> Personnage.h:13</div></div>
+<div class="ttc" id="aclass_personnage_html_a045e4abd7b6099d9468b357078f98688"><div class="ttname"><a href="class_personnage.html#a045e4abd7b6099d9468b357078f98688">Personnage::retirerVie</a></div><div class="ttdeci">void retirerVie(int nbDegat)</div><div class="ttdoc">Retire de la vie au personnage de l'instance.</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:17</div></div>
+<div class="ttc" id="aclass_personnage_html_a152c87fe36d45f61ecfa2c58374b524e"><div class="ttname"><a href="class_personnage.html#a152c87fe36d45f61ecfa2c58374b524e">Personnage::estMort</a></div><div class="ttdeci">bool estMort() const</div><div class="ttdoc">Vérifie si le personnage de l'instance est mort ou pas.</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:13</div></div>
+<div class="ttc" id="aclass_personnage_html_a1996b0944e92c2c52e39734fbe4d7371"><div class="ttname"><a href="class_personnage.html#a1996b0944e92c2c52e39734fbe4d7371">Personnage::testRegression</a></div><div class="ttdeci">void testRegression() const</div><div class="ttdoc">Test les fonctions membres de la classe Personnage.</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:58</div></div>
+<div class="ttc" id="aclass_personnage_html_a1f21daadf6f152072c97b5700849a6bc"><div class="ttname"><a href="class_personnage.html#a1f21daadf6f152072c97b5700849a6bc">Personnage::vie</a></div><div class="ttdeci">int vie</div><div class="ttdef"><b>Definition:</b> Personnage.h:17</div></div>
+<div class="ttc" id="aclass_personnage_html_a4885a6cd17d50bf750232f7a4c94f64b"><div class="ttname"><a href="class_personnage.html#a4885a6cd17d50bf750232f7a4c94f64b">Personnage::update</a></div><div class="ttdeci">void update()</div><div class="ttdoc">Met à jour la position du personnage.</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:50</div></div>
+<div class="ttc" id="aclass_personnage_html_a62332318c980f41e38f2784ba62cf303"><div class="ttname"><a href="class_personnage.html#a62332318c980f41e38f2784ba62cf303">Personnage::objet</a></div><div class="ttdeci">Objet objet</div><div class="ttdef"><b>Definition:</b> Personnage.h:18</div></div>
+<div class="ttc" id="aclass_personnage_html_a8c30ec79f1a3086f952d6458b531cb4d"><div class="ttname"><a href="class_personnage.html#a8c30ec79f1a3086f952d6458b531cb4d">Personnage::attaquer</a></div><div class="ttdeci">void attaquer(type_attaque t, Personnage &amp;p)</div><div class="ttdoc">Le personnage de l'instance attaque le personnage en paramètre.</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:21</div></div>
+<div class="ttc" id="aclass_personnage_html_aa4a3e22b457d5374efd4bc42ad05696e"><div class="ttname"><a href="class_personnage.html#aa4a3e22b457d5374efd4bc42ad05696e">Personnage::teleporter</a></div><div class="ttdeci">void teleporter(float _x, float _y)</div><div class="ttdoc">Teleporte le personnage.</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:41</div></div>
+<div class="ttc" id="aclass_personnage_html_aa90afcce53474eb8ae8e04ee923da9f1"><div class="ttname"><a href="class_personnage.html#aa90afcce53474eb8ae8e04ee923da9f1">Personnage::identifiant</a></div><div class="ttdeci">unsigned int identifiant</div><div class="ttdef"><b>Definition:</b> Personnage.h:15</div></div>
+<div class="ttc" id="aclass_personnage_html_ab30f273d1d878af3b189131b4e7638dd"><div class="ttname"><a href="class_personnage.html#ab30f273d1d878af3b189131b4e7638dd">Personnage::nom</a></div><div class="ttdeci">std::string nom</div><div class="ttdef"><b>Definition:</b> Personnage.h:16</div></div>
+<div class="ttc" id="aclass_personnage_html_ab7c8dfb88afc5faa7a77d43e9ede09be"><div class="ttname"><a href="class_personnage.html#ab7c8dfb88afc5faa7a77d43e9ede09be">Personnage::setPerso</a></div><div class="ttdeci">void setPerso(unsigned int id, std::string n, int v=100)</div><div class="ttdoc">Mutateur d'un personnage (vie = 100)</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:9</div></div>
+<div class="ttc" id="aclass_personnage_html_abec36eb0310adc71f3375297fc590c65"><div class="ttname"><a href="class_personnage.html#abec36eb0310adc71f3375297fc590c65">Personnage::Personnage</a></div><div class="ttdeci">Personnage()</div><div class="ttdoc">Constructeur par défaut.</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:6</div></div>
+<div class="ttc" id="aclass_personnage_html_abfec5e39e68aaec8527913bcef97a236"><div class="ttname"><a href="class_personnage.html#abfec5e39e68aaec8527913bcef97a236">Personnage::deplacer</a></div><div class="ttdeci">void deplacer(float _x, float _y)</div><div class="ttdoc">Deplace le personnage.</div><div class="ttdef"><b>Definition:</b> Personnage.cpp:46</div></div>
+<div class="ttc" id="aclass_rectangle_html"><div class="ttname"><a href="class_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> Rectangle.h:5</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>

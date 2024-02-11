@@ -1,0 +1,616 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.6"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Street Fighter: Référence de la classe Image</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Street Fighter
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.9.6 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Chargement...</div>
+<div class="SRStatus" id="Searching">Recherche...</div>
+<div class="SRStatus" id="NoMatches">Aucune correspondance</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Fonctions membres publiques</a>  </div>
+  <div class="headertitle"><div class="title">Référence de la classe Image</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="_image_8h_source.html">Image.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Fonctions membres publiques</h2></td></tr>
+<tr class="memitem:a58edd1c45b4faeb5f789b0d036d02313"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a58edd1c45b4faeb5f789b0d036d02313">Image</a> ()</td></tr>
+<tr class="memdesc:a58edd1c45b4faeb5f789b0d036d02313"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur par défaut : initialise les données à nullptr et à 0.  <br /></td></tr>
+<tr class="separator:a58edd1c45b4faeb5f789b0d036d02313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7caafdb4e5827e0972cf261e4ff05f88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a7caafdb4e5827e0972cf261e4ff05f88">Image</a> (const std::string filename, SDL_Rect src_r, SDL_Rect dst_r, bool animation=false)</td></tr>
+<tr class="memdesc:a7caafdb4e5827e0972cf261e4ff05f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructeur : initialise la surface, les rectanlges et determine si l'image est animée.  <br /></td></tr>
+<tr class="separator:a7caafdb4e5827e0972cf261e4ff05f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0294f63700543e11c0f0da85601c7ae5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a0294f63700543e11c0f0da85601c7ae5">~Image</a> ()</td></tr>
+<tr class="memdesc:a0294f63700543e11c0f0da85601c7ae5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructeur : détruit la surface, la texture,.  <br /></td></tr>
+<tr class="separator:a0294f63700543e11c0f0da85601c7ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af30d64aff8f158236b4c97963bf4a7d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#af30d64aff8f158236b4c97963bf4a7d1">chargerImage</a> (const std::string filename, SDL_Rect src_r, SDL_Rect dst_r, bool animation=false)</td></tr>
+<tr class="memdesc:af30d64aff8f158236b4c97963bf4a7d1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Supprime l'ancienne image dans l'instance, et initialise la surface, les rectanlges et determine si l'image est animée.  <br /></td></tr>
+<tr class="separator:af30d64aff8f158236b4c97963bf4a7d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b3231683d2f127120a987c60319d63c"><td class="memItemLeft" align="right" valign="top">SDL_Surface *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a4b3231683d2f127120a987c60319d63c">get_surface</a> () const</td></tr>
+<tr class="memdesc:a4b3231683d2f127120a987c60319d63c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur : récupère la surface SDL.  <br /></td></tr>
+<tr class="separator:a4b3231683d2f127120a987c60319d63c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afacef9ab99d7f659a360b005621d9489"><td class="memItemLeft" align="right" valign="top">SDL_Texture *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#afacef9ab99d7f659a360b005621d9489">get_texture</a> () const</td></tr>
+<tr class="memdesc:afacef9ab99d7f659a360b005621d9489"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur : récupère la texture SDL.  <br /></td></tr>
+<tr class="separator:afacef9ab99d7f659a360b005621d9489"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74541db2e5fe831e82babd0e9b7ce640"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a74541db2e5fe831e82babd0e9b7ce640">get_src_rect</a> () const</td></tr>
+<tr class="memdesc:a74541db2e5fe831e82babd0e9b7ce640"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur : récupère le rectangle source de l'image.  <br /></td></tr>
+<tr class="separator:a74541db2e5fe831e82babd0e9b7ce640"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31d64804f219e3255f0de32e629895c8"><td class="memItemLeft" align="right" valign="top">SDL_Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a31d64804f219e3255f0de32e629895c8">get_dst_rect</a> () const</td></tr>
+<tr class="memdesc:a31d64804f219e3255f0de32e629895c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur : récupère le rectangle destination de l'image.  <br /></td></tr>
+<tr class="separator:a31d64804f219e3255f0de32e629895c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac145641890ed4879c3c6934dcc42c5e6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#ac145641890ed4879c3c6934dcc42c5e6">get_num_anim</a> () const</td></tr>
+<tr class="memdesc:ac145641890ed4879c3c6934dcc42c5e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur : récupère le numéro de l'animation.  <br /></td></tr>
+<tr class="separator:ac145641890ed4879c3c6934dcc42c5e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f92ce765150ab1af7d8052645bf604c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a0f92ce765150ab1af7d8052645bf604c">get_h_anim</a> () const</td></tr>
+<tr class="memdesc:a0f92ce765150ab1af7d8052645bf604c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur :  <br /></td></tr>
+<tr class="separator:a0f92ce765150ab1af7d8052645bf604c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adef3ce7352942ef58153abc7233953a9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#adef3ce7352942ef58153abc7233953a9">get_w_anim</a> () const</td></tr>
+<tr class="memdesc:adef3ce7352942ef58153abc7233953a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur :  <br /></td></tr>
+<tr class="separator:adef3ce7352942ef58153abc7233953a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affb117b87c3b6790114ed41868429014"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#affb117b87c3b6790114ed41868429014">get_tab_anim</a> (int indice) const</td></tr>
+<tr class="memdesc:affb117b87c3b6790114ed41868429014"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accesseur :  <br /></td></tr>
+<tr class="separator:affb117b87c3b6790114ed41868429014"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb64b7cbafd8ff2d8d1eb798a7b6c0ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#adb64b7cbafd8ff2d8d1eb798a7b6c0ed">set_texture</a> (SDL_Texture *t)</td></tr>
+<tr class="memdesc:adb64b7cbafd8ff2d8d1eb798a7b6c0ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur : modifie la texture.  <br /></td></tr>
+<tr class="separator:adb64b7cbafd8ff2d8d1eb798a7b6c0ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30aca980c64ac01c6cf2903e32d9f086"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a30aca980c64ac01c6cf2903e32d9f086">set_rect_src</a> (SDL_Rect rs)</td></tr>
+<tr class="memdesc:a30aca980c64ac01c6cf2903e32d9f086"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur : modifie le rectangle source.  <br /></td></tr>
+<tr class="separator:a30aca980c64ac01c6cf2903e32d9f086"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7188264e431dbbe160be587f80fb4577"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a7188264e431dbbe160be587f80fb4577">set_rect_dst</a> (SDL_Rect rd)</td></tr>
+<tr class="memdesc:a7188264e431dbbe160be587f80fb4577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur : modifie le rectangle destination.  <br /></td></tr>
+<tr class="separator:a7188264e431dbbe160be587f80fb4577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a952129d4b01b27099ecf8ba34a427a63"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a952129d4b01b27099ecf8ba34a427a63">set_num_anim</a> (unsigned int n)</td></tr>
+<tr class="memdesc:a952129d4b01b27099ecf8ba34a427a63"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mutateur : modifie le numéro de l'animatio,.  <br /></td></tr>
+<tr class="separator:a952129d4b01b27099ecf8ba34a427a63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3764b100939ffa98fbb7e826e418c865"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a3764b100939ffa98fbb7e826e418c865">initAnim</a> (int h1, int w1, int nb_anim1, int num_anim1, unsigned int *tab1)</td></tr>
+<tr class="memdesc:a3764b100939ffa98fbb7e826e418c865"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si l'image est animée, initialise les données requises.  <br /></td></tr>
+<tr class="separator:a3764b100939ffa98fbb7e826e418c865"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f7d3aa0ed5026cf2c2436e00783dad4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#a4f7d3aa0ed5026cf2c2436e00783dad4">resetAnim</a> ()</td></tr>
+<tr class="memdesc:a4f7d3aa0ed5026cf2c2436e00783dad4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remet l'animation à la premiere image.  <br /></td></tr>
+<tr class="separator:a4f7d3aa0ed5026cf2c2436e00783dad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaca3d43e67777b5e76462d1b4d2bacc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#adaca3d43e67777b5e76462d1b4d2bacc">switchAnim</a> (int number)</td></tr>
+<tr class="memdesc:adaca3d43e67777b5e76462d1b4d2bacc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si l'image est animée, change l'animation jouée.  <br /></td></tr>
+<tr class="separator:adaca3d43e67777b5e76462d1b4d2bacc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4f881e18d7b454ca185c05ec8e70b6d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_image.html#aa4f881e18d7b454ca185c05ec8e70b6d">update</a> ()</td></tr>
+<tr class="memdesc:aa4f881e18d7b454ca185c05ec8e70b6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Si l'image est animée, modifie le rectangle source.  <br /></td></tr>
+<tr class="separator:aa4f881e18d7b454ca185c05ec8e70b6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Documentation des constructeurs et destructeur</h2>
+<a id="a58edd1c45b4faeb5f789b0d036d02313" name="a58edd1c45b4faeb5f789b0d036d02313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58edd1c45b4faeb5f789b0d036d02313">&#9670;&#160;</a></span>Image() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Image::Image </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur par défaut : initialise les données à nullptr et à 0. </p>
+
+</div>
+</div>
+<a id="a7caafdb4e5827e0972cf261e4ff05f88" name="a7caafdb4e5827e0972cf261e4ff05f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7caafdb4e5827e0972cf261e4ff05f88">&#9670;&#160;</a></span>Image() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Image::Image </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>src_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>dst_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>animation</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructeur : initialise la surface, les rectanlges et determine si l'image est animée. </p>
+
+</div>
+</div>
+<a id="a0294f63700543e11c0f0da85601c7ae5" name="a0294f63700543e11c0f0da85601c7ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0294f63700543e11c0f0da85601c7ae5">&#9670;&#160;</a></span>~Image()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Image::~Image </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Destructeur : détruit la surface, la texture,. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Documentation des fonctions membres</h2>
+<a id="af30d64aff8f158236b4c97963bf4a7d1" name="af30d64aff8f158236b4c97963bf4a7d1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af30d64aff8f158236b4c97963bf4a7d1">&#9670;&#160;</a></span>chargerImage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Image::chargerImage </td>
+          <td>(</td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>src_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>dst_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>animation</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Supprime l'ancienne image dans l'instance, et initialise la surface, les rectanlges et determine si l'image est animée. </p>
+
+</div>
+</div>
+<a id="a31d64804f219e3255f0de32e629895c8" name="a31d64804f219e3255f0de32e629895c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31d64804f219e3255f0de32e629895c8">&#9670;&#160;</a></span>get_dst_rect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Rect Image::get_dst_rect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur : récupère le rectangle destination de l'image. </p>
+
+</div>
+</div>
+<a id="a0f92ce765150ab1af7d8052645bf604c" name="a0f92ce765150ab1af7d8052645bf604c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f92ce765150ab1af7d8052645bf604c">&#9670;&#160;</a></span>get_h_anim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Image::get_h_anim </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur : </p>
+
+</div>
+</div>
+<a id="ac145641890ed4879c3c6934dcc42c5e6" name="ac145641890ed4879c3c6934dcc42c5e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac145641890ed4879c3c6934dcc42c5e6">&#9670;&#160;</a></span>get_num_anim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Image::get_num_anim </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur : récupère le numéro de l'animation. </p>
+
+</div>
+</div>
+<a id="a74541db2e5fe831e82babd0e9b7ce640" name="a74541db2e5fe831e82babd0e9b7ce640"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74541db2e5fe831e82babd0e9b7ce640">&#9670;&#160;</a></span>get_src_rect()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Rect Image::get_src_rect </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur : récupère le rectangle source de l'image. </p>
+
+</div>
+</div>
+<a id="a4b3231683d2f127120a987c60319d63c" name="a4b3231683d2f127120a987c60319d63c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b3231683d2f127120a987c60319d63c">&#9670;&#160;</a></span>get_surface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Surface * Image::get_surface </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur : récupère la surface SDL. </p>
+
+</div>
+</div>
+<a id="affb117b87c3b6790114ed41868429014" name="affb117b87c3b6790114ed41868429014"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affb117b87c3b6790114ed41868429014">&#9670;&#160;</a></span>get_tab_anim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Image::get_tab_anim </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>indice</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur : </p>
+
+</div>
+</div>
+<a id="afacef9ab99d7f659a360b005621d9489" name="afacef9ab99d7f659a360b005621d9489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afacef9ab99d7f659a360b005621d9489">&#9670;&#160;</a></span>get_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">SDL_Texture * Image::get_texture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur : récupère la texture SDL. </p>
+
+</div>
+</div>
+<a id="adef3ce7352942ef58153abc7233953a9" name="adef3ce7352942ef58153abc7233953a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adef3ce7352942ef58153abc7233953a9">&#9670;&#160;</a></span>get_w_anim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Image::get_w_anim </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Accesseur : </p>
+
+</div>
+</div>
+<a id="a3764b100939ffa98fbb7e826e418c865" name="a3764b100939ffa98fbb7e826e418c865"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3764b100939ffa98fbb7e826e418c865">&#9670;&#160;</a></span>initAnim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Image::initAnim </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>h1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>w1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nb_anim1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>num_anim1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int *&#160;</td>
+          <td class="paramname"><em>tab1</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Si l'image est animée, initialise les données requises. </p>
+
+</div>
+</div>
+<a id="a4f7d3aa0ed5026cf2c2436e00783dad4" name="a4f7d3aa0ed5026cf2c2436e00783dad4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f7d3aa0ed5026cf2c2436e00783dad4">&#9670;&#160;</a></span>resetAnim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Image::resetAnim </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Remet l'animation à la premiere image. </p>
+
+</div>
+</div>
+<a id="a952129d4b01b27099ecf8ba34a427a63" name="a952129d4b01b27099ecf8ba34a427a63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a952129d4b01b27099ecf8ba34a427a63">&#9670;&#160;</a></span>set_num_anim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Image::set_num_anim </td>
+          <td>(</td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur : modifie le numéro de l'animatio,. </p>
+
+</div>
+</div>
+<a id="a7188264e431dbbe160be587f80fb4577" name="a7188264e431dbbe160be587f80fb4577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7188264e431dbbe160be587f80fb4577">&#9670;&#160;</a></span>set_rect_dst()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Image::set_rect_dst </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>rd</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur : modifie le rectangle destination. </p>
+
+</div>
+</div>
+<a id="a30aca980c64ac01c6cf2903e32d9f086" name="a30aca980c64ac01c6cf2903e32d9f086"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30aca980c64ac01c6cf2903e32d9f086">&#9670;&#160;</a></span>set_rect_src()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Image::set_rect_src </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Rect&#160;</td>
+          <td class="paramname"><em>rs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur : modifie le rectangle source. </p>
+
+</div>
+</div>
+<a id="adb64b7cbafd8ff2d8d1eb798a7b6c0ed" name="adb64b7cbafd8ff2d8d1eb798a7b6c0ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb64b7cbafd8ff2d8d1eb798a7b6c0ed">&#9670;&#160;</a></span>set_texture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Image::set_texture </td>
+          <td>(</td>
+          <td class="paramtype">SDL_Texture *&#160;</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Mutateur : modifie la texture. </p>
+
+</div>
+</div>
+<a id="adaca3d43e67777b5e76462d1b4d2bacc" name="adaca3d43e67777b5e76462d1b4d2bacc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adaca3d43e67777b5e76462d1b4d2bacc">&#9670;&#160;</a></span>switchAnim()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Image::switchAnim </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>number</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Si l'image est animée, change l'animation jouée. </p>
+
+</div>
+</div>
+<a id="aa4f881e18d7b454ca185c05ec8e70b6d" name="aa4f881e18d7b454ca185c05ec8e70b6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4f881e18d7b454ca185c05ec8e70b6d">&#9670;&#160;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Image::update </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Si l'image est animée, modifie le rectangle source. </p>
+
+</div>
+</div>
+<hr/>La documentation de cette classe a été générée à partir des fichiers suivants :<ul>
+<li>src/sdl/<a class="el" href="_image_8h_source.html">Image.h</a></li>
+<li>src/sdl/<a class="el" href="_image_8cpp.html">Image.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Généré par&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6
+</small></address>
+</body>
+</html>
